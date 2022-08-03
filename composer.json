@@ -8,9 +8,9 @@
     "autoload": {
         "psr-4": {
             "Zunfuyuzora\\Ukyotable\\": "src/",
-            "Zunfuyuzora\\Ukyotable\\Contracts": "src/Contracts",
-            "Zunfuyuzora\\Ukyotable\\Datatypes": "src/Datatypes",
-            "Zunfuyuzora\\Ukyotable\\Traits": "src/Traits"
+            "Zunfuyuzora\\Ukyotable\\Contracts\\": "src/Contracts",
+            "Zunfuyuzora\\Ukyotable\\Datatypes\\": "src/Datatypes",
+            "Zunfuyuzora\\Ukyotable\\Traits\\": "src/Traits"
         }
     },
     "authors": [
