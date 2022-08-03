@@ -1,7 +1,6 @@
 {
     "name": "zunfuyuzora/ukyotable",
-    "description": "Ukyo help you Serve Datatable for Laravel 8",
-    "type": "library",
+    "description": "Ukyo will help you to Serve Datatable for Laravel 8",
     "require": {
         "laravel/framework": "^8.65"
     },
@@ -11,11 +10,25 @@
             "Zunfuyuzora\\Ukyotable\\": "src/"
         }
     },
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Zun",
             "email": "zunfuyuzora@gmail.com"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "UkyoTable": "Zunfuyuzora\\Ukyotable\\UkyoTable"
+            },
+            "providers": [
+                "Zunfuyuzora\\Ukyotable\\UkyoTableServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 }
