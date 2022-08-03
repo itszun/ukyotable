@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Datatypes;
+namespace ZunFuyuzora\UkyoTable\Datatypes;
 
 use Doctrine\DBAL\Query\QueryBuilder;
 use Illuminate\Http\Request;

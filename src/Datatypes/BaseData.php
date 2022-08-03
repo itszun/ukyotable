@@ -13,7 +13,7 @@ class BaseData implements Arrayable, ArrayAccess, Jsonable, JsonSerializable {
     public function offsetExists($offset): bool {
         return isset($this->{$offset});
     }
-    public function offsetGet($offset): bool {
+    public function offsetGet($offset) {
         return isset($this->{$offset}) ? $this->{$offset} : null;
     }
     public function offsetUnset($offset): void {

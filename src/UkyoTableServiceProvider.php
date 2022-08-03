@@ -13,8 +13,10 @@ class UkyoTableServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('ZunFuyuzora\UkyoTable\UkyoTableController');
-        $this->app->make('ZunFuyuzora\UkyoTable\Datatable');
+        // $this->app->make('ZunFuyuzora\UkyoTable\UkyoTableController');
+        // $this->app->make('ZunFuyuzora\UkyoTable\UkyoTable');
+        // $this->app->make('ZunFuyuzora\UkyoTable\Contracts\UkyoModel');
+        // $this->app->make('ZunFuyuzora\UkyoTable\Traits\UkyoPickTable');
     }
 
     /**

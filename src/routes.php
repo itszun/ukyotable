@@ -9,3 +9,5 @@ Route::get('ukyo', function(){
 
 Route::get('ukyo/super', [UkyoTableController::class, 'superPose']);
 Route::get('ukyo/wiggly', [UkyoTableController::class, 'wigglyPose']);
+Route::get('ukyo/test', [UkyoTableController::class, 'dataTableTest']);
+
