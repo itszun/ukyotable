@@ -7,10 +7,10 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Zunfuyuzora\\Ukyotable\\": "src/",
-            "Zunfuyuzora\\Ukyotable\\Contracts\\": "src/Contracts",
-            "Zunfuyuzora\\Ukyotable\\Datatypes\\": "src/Datatypes",
-            "Zunfuyuzora\\Ukyotable\\Traits\\": "src/Traits"
+            "ZunFuyuzora\\UkyoTable\\": "src/",
+            "ZunFuyuzora\\UkyoTable\\Contracts\\": "src/Contracts",
+            "ZunFuyuzora\\UkyoTable\\Datatypes\\": "src/Datatypes",
+            "ZunFuyuzora\\UkyoTable\\Traits\\": "src/Traits"
         }
     },
     "authors": [
@@ -22,10 +22,10 @@
     "extra": {
         "laravel": {
             "aliases": {
-                "UkyoTable": "Zunfuyuzora\\Ukyotable\\UkyoTable"
+                "UkyoTable": "ZunFuyuzora\\UkyoTable\\UkyoTable"
             },
             "providers": [
-                "Zunfuyuzora\\Ukyotable\\UkyoTableServiceProvider"
+                "ZunFuyuzora\\UkyoTable\\UkyoTableServiceProvider"
             ]
         }
     },
