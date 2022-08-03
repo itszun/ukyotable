@@ -3,8 +3,8 @@
 namespace ZunFuyuzora\UkyoTable\Datatypes;
 
 class Search extends BaseData {
-    protected $value;
-    protected $regex;
+    public $value;
+    public $regex;
 
     public function __construct($data)
     {

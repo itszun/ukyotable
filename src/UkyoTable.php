@@ -21,6 +21,7 @@ use ZunFuyuzora\UkyoTable\Datatypes\DatatableRequest;
 
 class UkyoTable {
     public $payload;
+    public $customMethodCall;
     public UkyoModel $model;
     public $options;
     public $customAttribute;
@@ -40,7 +41,7 @@ class UkyoTable {
     }
 
     public function keyword() {
-        //
+
     }
 
     public function get(string | UkyoModel $model) {
@@ -65,16 +66,28 @@ class UkyoTable {
         ];
     }
 
+    public function using($string) {
+        $this->customMethodCall = $string;
+        return $this;
+    }
+
     public function callQuery($payload)
     {
         $offset = $payload->start;
         $limit = $payload->length;
-        $query = $this->model
-            ->ukyoGather();
+        if ($this->customMethodCall) {
+            $query = $this->model
+                ->{$this->customMethodCall}();
+        } else {
+            $query = $this->model
+                ->ukyoGather();
+        }
+
         $count = $query->count();
-        $rows = $query->UkyoOrder($payload->order)->pick($offset, $limit)
-            ->get()
-            ;
+        $rows = $query->UkyoSearch($payload)->UkyoOrder($payload->order)->pick($offset, $limit)
+        ->get()
+        ;
+        // dd($rows->toSql());
         return compact('count', 'rows');
     }
 
