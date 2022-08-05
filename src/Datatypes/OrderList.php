@@ -11,7 +11,7 @@ class OrderList extends ListData {
         return $this;
     }
 
-    public function getColumns(int | null $n = null) {
+    public function getColumns($n = null) {
         if ($n == null) {
             return $this->columns->list;
         }

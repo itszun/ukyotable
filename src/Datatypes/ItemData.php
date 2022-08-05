@@ -5,7 +5,7 @@ namespace ZunFuyuzora\UkyoTable\Datatypes;
 class ItemData extends BaseData
 {
     protected $parent;
-    public function __construct(array | null $data, $parent = null)
+    public function __construct(array $data, $parent = null)
     {
         $this->setParent($parent);
         $this->init($data);

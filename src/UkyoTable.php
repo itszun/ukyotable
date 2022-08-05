@@ -44,7 +44,7 @@ class UkyoTable {
 
     }
 
-    public function get(string | UkyoModel $model) {
+    public function get(UkyoModel $model) {
         if (gettype($model) == "string") {
             $model = new $model;
         }

@@ -6,7 +6,7 @@ class ListData extends BaseData
 {
     public $list = [];
     protected $childClass = ItemData::class;
-    public function __construct(array | null $data)
+    public function __construct($data)
     {
         if (gettype($data) == "array") {
             foreach ($data as $k => $v) {

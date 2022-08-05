@@ -8,7 +8,7 @@ use ZunFuyuzora\UkyoTable\Datatypes\OrderList;
 
 trait UkyoOrderTable {
 
-    public function scopeUkyoOrder(Builder $query, OrderList | Order | null $order): Builder {
+    public function scopeUkyoOrder(Builder $query, $order): Builder {
         if ($order instanceof OrderList) {
             $parent = $order;
             $order = $order->list[0];
